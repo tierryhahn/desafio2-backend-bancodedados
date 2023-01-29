@@ -1,8 +1,17 @@
 # desafio2-backend-bancodedados
 
-Instalação e funcionamento em ambientes de desenvolvimento
+# O projeto:
+A aplicação consiste em analisar um arquiovo txt (CNAB) e guardar as informações (transacções financeiras) numa base de dados.
 
- Crie seu ambiente virtual:
+# Tecnologias:
+- Django Framework
+- Python 3
+- SQLite
+
+
+ Instalação e funcionamento em ambientes de desenvolvimento:
+
+1. Crie seu ambiente virtual:
 ```bash
 python -m venv venv
 ```
