@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from cnab.views import ListViewSet
+from django.conf.urls.static import static
+from django.conf import settings
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('file', ListViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-]
+    path("", include(router.urls)),
+    path("", include("cnab.urls"))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
