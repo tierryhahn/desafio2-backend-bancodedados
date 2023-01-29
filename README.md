@@ -1,33 +1,26 @@
 # desafio2-backend-bancodedados
 
-Installation and running in development environments
+Instalação e funcionamento em ambientes de desenvolvimento
 
-Create the virtual environment:
+ Crie seu ambiente virtual:
+```bash
 python -m venv venv
+```
 
-activate the venv:
-
-# Linux
+2. Ative seu venv:
+```bash
+# linux:
 source venv/bin/activate
 
-# Windows
+# windows:
 .\venv\Scripts\activate
+```
 
+# Rotas:
 
-Instale as dependências:
-pip install -r requirements.txt
-
-Run the migrations:
-./manage.py migrate
-
-Run the application:
-./manage.py runserver
-
-# Routes:
-
-File upload (POST) and list all transactions(GET):
+Upload do arquivo (POST) e listagem de todas as transações(GET):
 http://127.0.0.1:8000/file/
 
-Stores balance:
+Balanço das lojas:
 http://127.0.0.1:8000/loja/
 
