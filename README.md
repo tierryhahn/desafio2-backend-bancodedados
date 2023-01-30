@@ -25,6 +25,22 @@ source venv/bin/activate
 .\venv\Scripts\activate
 ```
 
+3. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+4. Rode as migrations:
+```bash
+./manage.py migrate
+```
+
+5. Inicialização do servidor:
+```bash
+./manage.py runserver
+```
+
+
 # Rotas:
 
 Upload do arquivo (POST) e listagem de todas as transações(GET):
